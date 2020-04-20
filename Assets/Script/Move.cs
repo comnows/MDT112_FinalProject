@@ -4,30 +4,18 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    [SerializeField] KeyCode MoveForward;
-    [SerializeField] KeyCode MoveBackward;
-    [SerializeField] KeyCode MoveLeft;
-    [SerializeField] KeyCode MoveRight;
-    
+    public float speed;
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(MoveForward))
-        {
-            transform.position += new Vector3(0f,0f,0f) * Time.deltaTime;
-        }
-        if(Input.GetKey(MoveBackward))
-        {
-            transform.position += new Vector3(0f,0f,0f) * Time.deltaTime;
-        }
-        if(Input.GetKey(MoveLeft))
-        {
-            transform.position += new Vector3(0f,0f,0f) * Time.deltaTime;
-        }
-        if(Input.GetKey(MoveRight))
-        {
-            transform.position += new Vector3(0f,0f,0f) * Time.deltaTime;
-        }
+        PlayerMovement();
+    }
+
+    void PlayerMovement()
+    {
+        float Horizontal = Input.GetAxis("Horizontal");
+        float Vertical = Input.GetAxis("Vertical");
+        Vector3 PlayerMovement = new Vector3 (Horizontal,0f,Vertical)*speed*Time.deltaTime;
+        transform.Translate(PlayerMovement,Space.Self);
     }
 }

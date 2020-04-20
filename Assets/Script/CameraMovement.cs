@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform player;
-    public Vector3 Offset;
-    public float speed;
+    public Transform Player,CamTarget;
+    
+    public float RotationSpeed = 1;
+    float mouseX,mouseY;
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        transform.position = player.position + Offset;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
-        transform.Rotate(0,speed * Time.deltaTime,0);
+    void LateUpdate()
+    {
+        CamControl();
+    }
+    void CamControl()
+    {
+        mouseX += Input.GetAxis("Mouse X")*RotationSpeed;
+        mouseY -= Input.GetAxis("Mouse Y")*RotationSpeed;
+        mouseY = Mathf.Clamp(mouseY,-35,60);
+
+        transform.LookAt(CamTarget);
+
+        CamTarget.rotation = Quaternion.Euler(mouseY,mouseX,0);
+        Player.rotation = Quaternion.Euler(0,mouseX,0);
     }
 }
