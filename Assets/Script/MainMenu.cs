@@ -5,13 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private void Play()
+    public Animator transition;
+    private float transitionTime = 1f;
+
+    public void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FadeToNextScene();
     }
 
-    private void Quit()
+    public void FadeToNextScene()
     {
+        StartCoroutine(LoadScene(SceneManager.GetActiveScene().buildIndex + 1));
+    }
+
+    IEnumerator LoadScene(int SceneIndex)
+    {
+        transition.SetTrigger("Start"); //Play animation
+
+        yield return new WaitForSeconds(transitionTime); //Wait until animation ended
+
+        SceneManager.LoadScene(SceneIndex); //Load next scene
+    }
+
+    public void Quit()
+    {
+        //Debug.Log("Game Quit");
         Application.Quit();
     }
 }
