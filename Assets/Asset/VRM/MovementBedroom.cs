@@ -30,10 +30,10 @@ public class MovementBedroom : MonoBehaviour
     {
         float Horizontal = Input.GetAxis("Horizontal");
         float Vertical = Input.GetAxis("Vertical");
-        
+ 
         Vector3 PlayerMovement = new Vector3(0f, 0f, Vertical) * speed * Time.deltaTime;
         PlayerMovement = transform.TransformDirection(PlayerMovement);
-        transform.Rotate(0, -Horizontal, 0);
+        transform.Rotate(0, Horizontal, 0);
         transform.Translate(PlayerMovement, Space.World);
         
 
@@ -45,6 +45,8 @@ public class MovementBedroom : MonoBehaviour
         anim = GetComponent<Animator>();
         rbody = GetComponent<Rigidbody>();
     }
+
+
     
    }
     
