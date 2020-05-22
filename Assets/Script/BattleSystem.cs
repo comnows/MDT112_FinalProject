@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST}
 
@@ -104,6 +105,7 @@ public class BattleSystem : MonoBehaviour
         else if(state == BattleState.LOST)
         {
             dialogueText.text = "You were defeated by " + enemyUnit.unitName + "!!!";
+            SceneManager.LoadScene("GameOver");
         }
     }
 
