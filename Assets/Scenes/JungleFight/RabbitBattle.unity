@@ -17075,7 +17075,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1711248765}
         m_MethodName: OnAttackButton
         m_Mode: 1
         m_Arguments:
@@ -19347,7 +19347,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1711248765}
         m_MethodName: OnHealButton
         m_Mode: 1
         m_Arguments:

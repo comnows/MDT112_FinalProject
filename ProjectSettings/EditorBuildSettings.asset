@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 23b320158766e46499e8826aad34db0e
+  - enabled: 1
+    path: Assets/Scenes/JungleFight/RabbitBattle.unity
+    guid: 7d1b70e10dac1ad4f86f322679545a2e
   m_configObjects: {}

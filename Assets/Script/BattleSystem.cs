@@ -105,7 +105,23 @@ public class BattleSystem : MonoBehaviour
             if(enemyUnit.unitName == "FinalBoss")
             {
                 SceneManager.LoadScene("GoodEnding"); //change GoodEnding to Name want to fade
-            }           
+            }
+            if(enemyUnit.unitName == "Big rabbit")
+            {
+                SceneManager.LoadScene("Jungle");
+            }
+            if(enemyUnit.unitName == "Rhino")
+            {
+                SceneManager.LoadScene("Jungle");
+            }
+            if(enemyUnit.unitName == "Spider")
+            {
+                SceneManager.LoadScene("Jungle");
+            }
+            if(enemyUnit.unitName == "Nature Drake")
+            {
+                SceneManager.LoadScene("Jungle");
+            }
         }
         else if(state == BattleState.LOST)
         {

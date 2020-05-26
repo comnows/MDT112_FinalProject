@@ -11,7 +11,9 @@ public class EnemyHitSceneChange : MonoBehaviour
     {
         if(other.gameObject.Equals(EnemyObject))
         {
-            SceneManager.LoadScene("FightScene");
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("RabbitBattle");
         }
     }
 }
