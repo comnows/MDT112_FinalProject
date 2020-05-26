@@ -8,10 +8,10 @@ public class EnemyHitSceneChange : MonoBehaviour
     public GameObject EnemyObject;
 
     void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.Equals(EnemyObject))
         {
-            if(other.gameObject.Equals(EnemyObject))
-            {
-                SceneManager.LoadScene("FightScene");
-            }
+            SceneManager.LoadScene("FightScene");
         }
+    }
 }

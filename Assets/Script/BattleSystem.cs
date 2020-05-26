@@ -101,6 +101,11 @@ public class BattleSystem : MonoBehaviour
         if(state == BattleState.WON)
         {
             dialogueText.text = "You won the battle!!!";
+
+            if(enemyUnit.unitName == "FinalBoss")
+            {
+                SceneManager.LoadScene("GoodEnding"); //change GoodEnding to Name want to fade
+            }           
         }
         else if(state == BattleState.LOST)
         {

@@ -7,12 +7,13 @@ public class GameOver : MonoBehaviour
 {
     public Animator transition;
     private float transitionTime = 1f;
-
-    public void Mainmenu()
+    void Update() 
     {
-        FadeToMainMenu();
+        if(Input.GetKey(KeyCode.Mouse0))
+        {
+            FadeToMainMenu();
+        }
     }
-
     public void FadeToMainMenu()
     {
         StartCoroutine(LoadScene("MainMenu"));
@@ -26,5 +27,4 @@ public class GameOver : MonoBehaviour
 
         SceneManager.LoadScene(SceneIndex); //Load scene
     }
-
 }
