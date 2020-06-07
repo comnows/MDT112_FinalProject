@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657856, g: 0.49641412, b: 0.57481736, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657797, g: 0.49641365, b: 0.5748166, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 408980786}
         m_MethodName: OnHealButton
         m_Mode: 1
         m_Arguments:
@@ -1054,7 +1054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5.27, y: 2.63}
+  m_AnchoredPosition: {x: 7, y: 2.63}
   m_SizeDelta: {x: 328.99, y: 113.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &325529230
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f16e459871748348811a8d49f1878e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 1548984092}
 --- !u!114 &325529231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,13 +1540,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1976740397febd64f89425e8d4cd3448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 0}
-  enemyPrefab: {fileID: 0}
-  dialogueText: {fileID: 0}
-  playerHUD: {fileID: 0}
-  enemyHUD: {fileID: 0}
-  atkButton: {fileID: 0}
-  healButton: {fileID: 0}
+  playerPrefab: {fileID: 2114309160}
+  enemyPrefab: {fileID: 1605595098}
+  dialogueText: {fileID: 1137116045}
+  playerHUD: {fileID: 1206711962}
+  enemyHUD: {fileID: 916292036}
+  atkButton: {fileID: 926209161}
+  healButton: {fileID: 57936603}
   state: 0
 --- !u!4 &408980787
 Transform:
@@ -3179,7 +3179,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 408980786}
         m_MethodName: OnAttackButton
         m_Mode: 1
         m_Arguments:
@@ -3658,7 +3658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f16e459871748348811a8d49f1878e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 1548984092}
 --- !u!114 &992071350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5668,13 +5668,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548984089}
-  m_LocalRotation: {x: 0.00824584, y: 0.98604006, z: -0.15815866, w: 0.05140868}
-  m_LocalPosition: {x: 15.271, y: 3.093, z: 6.7}
+  m_LocalRotation: {x: 0.012236314, y: 0.9900708, z: -0.1380027, w: 0.023777299}
+  m_LocalPosition: {x: 15.16, y: 3.79, z: 9.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
-  m_LocalEulerAnglesHint: {x: 18.225, y: 174.031, z: 0}
+  m_LocalEulerAnglesHint: {x: 15.893001, y: 177.395, z: 1.0530001}
 --- !u!1001 &1593924685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7662,7 +7662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114309160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.84, y: 0, z: 1.66}
+  m_LocalPosition: {x: 21.33, y: 0, z: 2.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1651792668}
