@@ -14,6 +14,9 @@ public class BattleSystem : MonoBehaviour
     unit playerUnit;
     unit enemyUnit;
 
+    Player player;
+    public int exp;
+
     public Text dialogueText;
 
     public BattleHUD playerHUD;
@@ -34,6 +37,14 @@ public class BattleSystem : MonoBehaviour
     {
         GameObject playerGO = playerPrefab;
         playerUnit = playerGO.GetComponent<unit>();
+
+        player = playerGO.GetComponent<Player>();
+        player.LoadPlayer();
+
+        playerUnit.unitLevel = player.level;
+        playerUnit.maxHP = player.health;
+        playerUnit.currentHP = player.health;
+        playerUnit.damage = player.atkDmg;
 
         GameObject enemyGO = enemyPrefab;
         enemyUnit = enemyGO.GetComponent<unit>();
@@ -108,6 +119,8 @@ public class BattleSystem : MonoBehaviour
             }
             if(enemyUnit.unitName == "Big rabbit")
             {
+                exp = 25;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Jungle");
             }
             if(enemyUnit.unitName == "Rhino")

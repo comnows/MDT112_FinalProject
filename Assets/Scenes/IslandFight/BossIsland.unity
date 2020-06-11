@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 13277878}
   - component: {fileID: 13277877}
+  - component: {fileID: 13277879}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -162,6 +163,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &13277879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13277876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edddec3be60486e4ba2a43f39c9989b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  maxlevel: 10
+  currentEXP: 0
+  maxEXP: 100
+  health: 100
+  atkDmg: 25
 --- !u!1001 &51459511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -669,7 +688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &202211641
 RectTransform:
   m_ObjectHideFlags: 0
@@ -816,7 +835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &223837453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,13 +3443,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211535313}
-  m_LocalRotation: {x: 0.007034903, y: 0.989486, z: -0.13493237, w: 0.05158834}
+  m_LocalRotation: {x: 0.0023581567, y: 0.9906784, z: -0.13509838, w: 0.017292399}
   m_LocalPosition: {x: -0.73, y: 9.59, z: 22.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 15.531001, y: 174.031, z: 0}
+  m_LocalEulerAnglesHint: {x: 15.531001, y: 178, z: 0}
 --- !u!1001 &1220553717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4675,6 +4694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 13277876}
   enemyPrefab: {fileID: 397249555}
+  exp: 0
   dialogueText: {fileID: 832512039}
   playerHUD: {fileID: 1371552785}
   enemyHUD: {fileID: 822340433}
