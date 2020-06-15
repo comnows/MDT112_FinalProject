@@ -30,4 +30,18 @@ public class CameraMovement : MonoBehaviour
         CamTarget.rotation = Quaternion.Euler(mouseY,mouseX,0);
         Player.rotation = Quaternion.Euler(0,mouseX,0);
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+        }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
 }
