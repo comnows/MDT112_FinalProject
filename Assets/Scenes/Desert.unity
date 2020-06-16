@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657856, g: 0.49641412, b: 0.57481736, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657797, g: 0.49641365, b: 0.5748166, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2208,6 +2208,8 @@ GameObject:
   - component: {fileID: 705498554}
   - component: {fileID: 705498553}
   - component: {fileID: 705498552}
+  - component: {fileID: 705498560}
+  - component: {fileID: 705498559}
   - component: {fileID: 705498551}
   m_Layer: 0
   m_Name: SummonEnemy
@@ -2231,7 +2233,8 @@ MonoBehaviour:
   EnemyObject: {fileID: 101568, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
   xPos: 20
   zPos: -2
-  yRot_max: 0
+  yRot_min: -90
+  yRot_max: -90
 --- !u!114 &705498552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2244,10 +2247,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyObject: {fileID: 0}
-  xPos: 0
-  zPos: 0
-  yRot_max: 0
+  EnemyObject: {fileID: 177288948906814411, guid: a745294aa66334b44b8d38cf0905a838,
+    type: 3}
+  xPos: -8
+  zPos: 24
+  yRot_min: 0
+  yRot_max: 360
 --- !u!114 &705498553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2260,10 +2265,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyObject: {fileID: 0}
+  EnemyObject: {fileID: 177288948906814411, guid: a745294aa66334b44b8d38cf0905a838,
+    type: 3}
   xPos: 0
-  zPos: 0
-  yRot_max: 0
+  zPos: 2
+  yRot_min: 0
+  yRot_max: 360
 --- !u!114 &705498554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2276,10 +2283,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyObject: {fileID: 0}
+  EnemyObject: {fileID: 141256, guid: b4806bcfd71324778b360c0299195b34, type: 3}
   xPos: 0
-  zPos: 0
-  yRot_max: 0
+  zPos: -25
+  yRot_min: 0
+  yRot_max: 360
 --- !u!114 &705498555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,10 +2300,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyObject: {fileID: 0}
-  xPos: 0
-  zPos: 0
-  yRot_max: 0
+  EnemyObject: {fileID: 141256, guid: b4806bcfd71324778b360c0299195b34, type: 3}
+  xPos: -4
+  zPos: -27
+  yRot_min: 0
+  yRot_max: 360
 --- !u!114 &705498556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2308,10 +2317,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyObject: {fileID: 0}
-  xPos: 0
-  zPos: 0
-  yRot_max: 0
+  EnemyObject: {fileID: 141256, guid: b4806bcfd71324778b360c0299195b34, type: 3}
+  xPos: -7
+  zPos: -28
+  yRot_min: 0
+  yRot_max: 360
 --- !u!114 &705498557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2324,10 +2334,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyObject: {fileID: 0}
-  xPos: 0
-  zPos: 0
-  yRot_max: 0
+  EnemyObject: {fileID: 141256, guid: b4806bcfd71324778b360c0299195b34, type: 3}
+  xPos: -10
+  zPos: -24
+  yRot_min: 0
+  yRot_max: 360
 --- !u!4 &705498558
 Transform:
   m_ObjectHideFlags: 0
@@ -2342,6 +2353,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &705498559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705498550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyObject: {fileID: 1067925524328404, guid: 6bbfea6690ef7724ba495c866081f855,
+    type: 3}
+  xPos: 25
+  zPos: 24
+  yRot_min: 0
+  yRot_max: 360
+--- !u!114 &705498560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705498550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84d5305e6ef1a2e4494a500ecca40d7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyObject: {fileID: 1067925524328404, guid: 6bbfea6690ef7724ba495c866081f855,
+    type: 3}
+  xPos: 11
+  zPos: 31
+  yRot_min: 0
+  yRot_max: 360
 --- !u!1001 &707647932
 PrefabInstance:
   m_ObjectHideFlags: 0

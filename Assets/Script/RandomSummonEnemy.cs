@@ -12,6 +12,7 @@ public class RandomSummonEnemy : MonoBehaviour
     //public float zPos_min;
     //public float zPos_max;
     private float yRotation;
+    public float yRot_min;
     public float yRot_max;
     private int EnemyCount = 1;
     //public int EnemyAmount;
@@ -28,8 +29,8 @@ public class RandomSummonEnemy : MonoBehaviour
         {
         //xPos = Random.Range(xPos_min,xPos_max); //change range needed
         //zPos = Random.Range(zPos_min,zPos_max); //change range needed
-        yRotation = Random.Range(0,yRot_max);
-        Instantiate(EnemyObject, new Vector3(xPos,1,zPos),Quaternion.Euler(0,yRotation,0)); //change yPos needed
+        yRotation = Random.Range(yRot_min,yRot_max);
+        Instantiate(EnemyObject, new Vector3(xPos,7,zPos),Quaternion.Euler(0,yRotation,0)); //change yPos needed
         yield return new WaitForSeconds(0.25f); //can change delay time
         EnemyCount++;
         }

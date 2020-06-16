@@ -50,65 +50,65 @@ public class Player : MonoBehaviour
 
             case 3:
             currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            maxEXP = 150;
+            health = 150;
+            atkDmg = 50;
             SavePlayer();
             break;
 
             case 4:
             currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            maxEXP = 200;
+            health = 180;
+            atkDmg = 60;
             SavePlayer();
             break;
 
             case 5:
             currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            maxEXP = 300;
+            health = 200;
+            atkDmg = 70;
             SavePlayer();
             break;
 
             case 6:
             currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            maxEXP = 500;
+            health = 250;
+            atkDmg = 85;
             SavePlayer();
             break;
 
             case 7:
             currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            maxEXP = 1000;
+            health = 300;
+            atkDmg = 100;
             SavePlayer();
             break;
 
             case 8:
             currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            maxEXP = 1500;
+            health = 350;
+            atkDmg = 110;
             SavePlayer();
             break;
 
             case 9:
             currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            maxEXP = 2000;
+            health = 400;
+            atkDmg = 115;
             SavePlayer();
             break;
 
             case 10:
-            currentEXP -= maxEXP;
-            maxEXP = 125;
-            health = 120;
-            atkDmg = 35;
+            currentEXP = 1;
+            maxEXP = 1;
+            health = 500;
+            atkDmg = 120;
             SavePlayer();
             break;
             }
