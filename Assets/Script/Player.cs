@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public int maxEXP = 100;
     public int health = 100;
     public int atkDmg = 25;
+    public int healAmount = 20;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class Player : MonoBehaviour
             maxEXP = 125;
             health = 120;
             atkDmg = 35;
+            healAmount = 25;
             SavePlayer();
             break;
 
@@ -53,6 +55,7 @@ public class Player : MonoBehaviour
             maxEXP = 150;
             health = 150;
             atkDmg = 50;
+            healAmount = 30;
             SavePlayer();
             break;
 
@@ -61,6 +64,7 @@ public class Player : MonoBehaviour
             maxEXP = 200;
             health = 180;
             atkDmg = 60;
+            healAmount = 35;
             SavePlayer();
             break;
 
@@ -69,6 +73,7 @@ public class Player : MonoBehaviour
             maxEXP = 300;
             health = 200;
             atkDmg = 70;
+            healAmount = 40;
             SavePlayer();
             break;
 
@@ -77,6 +82,7 @@ public class Player : MonoBehaviour
             maxEXP = 500;
             health = 250;
             atkDmg = 85;
+            healAmount = 50;
             SavePlayer();
             break;
 
@@ -85,6 +91,7 @@ public class Player : MonoBehaviour
             maxEXP = 1000;
             health = 300;
             atkDmg = 100;
+            healAmount = 60;
             SavePlayer();
             break;
 
@@ -93,6 +100,7 @@ public class Player : MonoBehaviour
             maxEXP = 1500;
             health = 350;
             atkDmg = 110;
+            healAmount = 80;
             SavePlayer();
             break;
 
@@ -101,6 +109,7 @@ public class Player : MonoBehaviour
             maxEXP = 2000;
             health = 400;
             atkDmg = 115;
+            healAmount = 100;
             SavePlayer();
             break;
 
@@ -109,6 +118,7 @@ public class Player : MonoBehaviour
             maxEXP = 1;
             health = 500;
             atkDmg = 120;
+            healAmount = 120;
             SavePlayer();
             break;
             }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7331,6 +7331,7 @@ MonoBehaviour:
   unitName: Sofia
   unitLevel: 1
   damage: 25
+  healAmount: 0
   maxHP: 100
   currentHP: 100
 --- !u!114 &673976937
@@ -7351,6 +7352,7 @@ MonoBehaviour:
   maxEXP: 100
   health: 100
   atkDmg: 25
+  healAmount: 20
 --- !u!1001 &696823594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19947,7 +19949,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3756839881981322762}
   - component: {fileID: 3756839881981322763}
-  - component: {fileID: 3756839881981322764}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -19984,25 +19985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Rhino
-  unitLevel: 1
-  damage: 15
-  maxHP: 110
-  currentHP: 110
---- !u!114 &3756839881981322764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3756839881981322761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edddec3be60486e4ba2a43f39c9989b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  maxlevel: 10
-  currentEXP: 0
-  maxEXP: 100
-  health: 100
-  atkDmg: 25
+  unitLevel: 2
+  damage: 20
+  healAmount: 0
+  maxHP: 220
+  currentHP: 220

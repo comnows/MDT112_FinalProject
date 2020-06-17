@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465773, g: 0.49641192, b: 0.57481766, a: 1}
+  m_IndirectSpecularColor: {r: 0.446577, g: 0.49641132, b: 0.57481635, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -145,6 +145,7 @@ MonoBehaviour:
   unitName: Sofia
   unitLevel: 1
   damage: 25
+  healAmount: 0
   maxHP: 100
   currentHP: 100
 --- !u!4 &13277878
@@ -181,6 +182,7 @@ MonoBehaviour:
   maxEXP: 100
   health: 100
   atkDmg: 25
+  healAmount: 20
 --- !u!1001 &51459511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1330,10 +1332,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Frog
-  unitLevel: 1
-  damage: 15
-  maxHP: 110
-  currentHP: 110
+  unitLevel: 5
+  damage: 20
+  healAmount: 0
+  maxHP: 800
+  currentHP: 800
 --- !u!4 &397249557
 Transform:
   m_ObjectHideFlags: 0

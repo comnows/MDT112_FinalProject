@@ -45,6 +45,7 @@ public class BattleSystem : MonoBehaviour
         playerUnit.maxHP = player.health;
         playerUnit.currentHP = player.health;
         playerUnit.damage = player.atkDmg;
+        playerUnit.healAmount = player.healAmount;
 
         GameObject enemyGO = enemyPrefab;
         enemyUnit = enemyGO.GetComponent<unit>();
@@ -160,7 +161,7 @@ public class BattleSystem : MonoBehaviour
 
     IEnumerator PlayerHeal()
     {
-        playerUnit.Heal(20);
+        playerUnit.Heal(playerUnit.healAmount);
 
         playerHUD.SetHP(playerUnit.currentHP);
         dialogueText.text = "You feel renewed strength!";

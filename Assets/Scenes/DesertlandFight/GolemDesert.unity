@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657856, g: 0.49641412, b: 0.57481736, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657797, g: 0.49641365, b: 0.5748166, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5976,10 +5976,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Unknown Insect
-  unitLevel: 1
-  damage: 15
-  maxHP: 110
-  currentHP: 110
+  unitLevel: 55
+  damage: 90
+  healAmount: 0
+  maxHP: 2000
+  currentHP: 2000
 --- !u!4 &1605595100
 Transform:
   m_ObjectHideFlags: 0
@@ -7748,6 +7749,7 @@ MonoBehaviour:
   unitName: Sofia
   unitLevel: 1
   damage: 25
+  healAmount: 0
   maxHP: 100
   currentHP: 100
 --- !u!4 &2114309162
@@ -7784,6 +7786,7 @@ MonoBehaviour:
   maxEXP: 100
   health: 100
   atkDmg: 25
+  healAmount: 20
 --- !u!1001 &2120463091
 PrefabInstance:
   m_ObjectHideFlags: 0
