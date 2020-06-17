@@ -120,21 +120,59 @@ public class BattleSystem : MonoBehaviour
             }
             if(enemyUnit.unitName == "Big rabbit")
             {
-                exp = 25;
+                exp = 15;
                 player.gainEXP(exp);
                 SceneManager.LoadScene("Jungle");
             }
             if(enemyUnit.unitName == "Rhino")
             {
+                exp = 20;
                 SceneManager.LoadScene("Jungle");
             }
             if(enemyUnit.unitName == "Spider")
             {
+                exp = 25;
                 SceneManager.LoadScene("Jungle");
             }
             if(enemyUnit.unitName == "Nature Drake")
             {
+                exp = 150;
                 SceneManager.LoadScene("Jungle");
+            }
+            if(enemyUnit.unitName == "Frog")
+            {
+                exp = 40;
+                SceneManager.LoadScene("Island");
+            }
+            if(enemyUnit.unitName == "Crab")
+            {
+                exp = 50;
+                SceneManager.LoadScene("Island");
+            }
+            if(enemyUnit.unitName == "Huclam")
+            {
+                exp = 75;
+                SceneManager.LoadScene("Island");
+            }
+            if(enemyUnit.unitName == "Miracle Drake")
+            {
+                exp = 1000;
+                SceneManager.LoadScene("Island");
+            }
+            if(enemyUnit.unitName == "Iguana")
+            {
+                exp = 100;
+                SceneManager.LoadScene("Desert");
+            }
+            if(enemyUnit.unitName == "Tiger")
+            {
+                exp = 150;
+                SceneManager.LoadScene("Desert");
+            }
+            if(enemyUnit.unitName == "Golem")
+            {
+                exp = 300;
+                SceneManager.LoadScene("Desert");
             }
         }
         else if(state == BattleState.LOST)

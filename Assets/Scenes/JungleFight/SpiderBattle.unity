@@ -19984,7 +19984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a544a66c1bff3c43ba878f22cfaed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Rhino
+  unitName: Spider
   unitLevel: 2
   damage: 20
   healAmount: 0
