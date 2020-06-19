@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657797, g: 0.49641365, b: 0.5748166, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657856, g: 0.49641412, b: 0.57481736, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5976,11 +5976,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Golem
-  unitLevel: 55
-  damage: 90
+  unitLevel: 15
+  damage: 40
   healAmount: 0
-  maxHP: 2000
-  currentHP: 2000
+  maxHP: 1100
+  currentHP: 1100
 --- !u!4 &1605595100
 Transform:
   m_ObjectHideFlags: 0

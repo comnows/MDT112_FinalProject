@@ -69,11 +69,11 @@ public class SceneChange : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene("GolemDesert"); //Change to scene want to load
             }
-            else if(other.gameObject.name == "IguanaModel(Clone)") //Change to name of gameObject
+            else if(other.gameObject.name == "Iguana(Clone)") //Change to name of gameObject
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene("IguanaDesert"); //Change to scene want to load
+                SceneManager.LoadScene("IguanaDesertland"); //Change to scene want to load
             }
             else if(other.gameObject.name == "tiger_idle(Clone)") //Change to name of gameObject
             {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657797, g: 0.49641365, b: 0.5748166, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657856, g: 0.49641412, b: 0.57481736, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5967,7 +5967,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1605595100}
-  - component: {fileID: 1605595099}
+  - component: {fileID: 1605595101}
   m_Layer: 0
   m_Name: 'Enemy '
   m_TagString: Untagged
@@ -5975,24 +5975,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1605595099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605595098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a544a66c1bff3c43ba878f22cfaed4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitName: Tiger
-  unitLevel: 45
-  damage: 115
-  healAmount: 0
-  maxHP: 440
-  currentHP: 440
 --- !u!4 &1605595100
 Transform:
   m_ObjectHideFlags: 0
@@ -6009,6 +5991,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1605595101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605595098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a544a66c1bff3c43ba878f22cfaed4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitName: Tiger
+  unitLevel: 9
+  damage: 35
+  healAmount: 0
+  maxHP: 1000
+  currentHP: 1000
 --- !u!1001 &1624813791
 PrefabInstance:
   m_ObjectHideFlags: 0

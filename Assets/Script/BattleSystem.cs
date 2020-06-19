@@ -127,11 +127,13 @@ public class BattleSystem : MonoBehaviour
             if(enemyUnit.unitName == "Rhino")
             {
                 exp = 20;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Jungle");
             }
             if(enemyUnit.unitName == "Spider")
             {
                 exp = 25;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Jungle");
             }
             if(enemyUnit.unitName == "Nature Drake")
@@ -141,17 +143,17 @@ public class BattleSystem : MonoBehaviour
             }
             if(enemyUnit.unitName == "Frog")
             {
-                exp = 40;
+                exp = 100;
                 SceneManager.LoadScene("Island");
             }
             if(enemyUnit.unitName == "Crab")
             {
-                exp = 50;
+                exp = 150;
                 SceneManager.LoadScene("Island");
             }
             if(enemyUnit.unitName == "Huclam")
             {
-                exp = 75;
+                exp = 300;
                 SceneManager.LoadScene("Island");
             }
             if(enemyUnit.unitName == "Miracle Drake")
@@ -161,20 +163,20 @@ public class BattleSystem : MonoBehaviour
             }
             if(enemyUnit.unitName == "Iguana")
             {
-                exp = 100;
+                exp = 40;
                 SceneManager.LoadScene("Desert");
             }
             if(enemyUnit.unitName == "Tiger")
             {
-                exp = 150;
+                exp = 50;
                 SceneManager.LoadScene("Desert");
             }
             if(enemyUnit.unitName == "Golem")
             {
-                exp = 300;
+                exp = 75;
                 SceneManager.LoadScene("Desert");
             }
-            if (enemyUnit.unitName == "drought Drake")//ชื่อบอสของด่านทะเลทราย **ยังไมได้เเก้**
+            if (enemyUnit.unitName == "drought Drake")
             {
                 exp = 500;
                 SceneManager.LoadScene("story7");
