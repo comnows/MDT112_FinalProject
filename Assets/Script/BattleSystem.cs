@@ -137,7 +137,7 @@ public class BattleSystem : MonoBehaviour
             if(enemyUnit.unitName == "Nature Drake")
             {
                 exp = 150;
-                SceneManager.LoadScene("Jungle");
+                SceneManager.LoadScene("story5");
             }
             if(enemyUnit.unitName == "Frog")
             {
@@ -157,7 +157,7 @@ public class BattleSystem : MonoBehaviour
             if(enemyUnit.unitName == "Miracle Drake")
             {
                 exp = 1000;
-                SceneManager.LoadScene("Island");
+                SceneManager.LoadScene("story9");
             }
             if(enemyUnit.unitName == "Iguana")
             {

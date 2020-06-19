@@ -9,23 +9,47 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 12d1c7182883e25499f93e472f27e543
   - enabled: 1
+    path: Assets/Scenes/story/story1/story1.unity
+    guid: e08783f858f418248a8a2e14d1377d9d
+  - enabled: 1
     path: Assets/Scenes/bedroom.unity
     guid: a9d6e655e055d7b48b5dc809af345e35
+  - enabled: 1
+    path: Assets/Scenes/story/story2/story2.unity
+    guid: 3599b29d8d9428d4ca1cdf775d8e1ca6
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: f2a61ba6bb449c5429f51e18cdae9c7e
   - enabled: 1
-    path: Assets/Scenes/LevelSelect.unity
-    guid: f3b388ddc72d8ea4fa7b5547c4873b8a
+    path: Assets/Scenes/story/story3/story3.unity
+    guid: 167d8d50edca8f641aedd0e0efa8e870
   - enabled: 1
     path: Assets/Scenes/Jungle.unity
     guid: 2f9cdf3d9d4efa246955f02988535f03
   - enabled: 1
+    path: Assets/Scenes/story/story4/story4.unity
+    guid: 1478e022acd230c439a9e96e64d2b32b
+  - enabled: 1
+    path: Assets/Scenes/story/story5/story5.unity
+    guid: 6a93ab8f70b577745b3962e26bba6898
+  - enabled: 1
     path: Assets/Scenes/Island.unity
     guid: f1bcb7b44efed7f4699c0dbe4c3ac7c5
   - enabled: 1
+    path: Assets/Scenes/story/story8/story8.unity
+    guid: e7d51750f67ed204fbf40cca5cf424bc
+  - enabled: 1
+    path: Assets/Scenes/story/story9/story9.unity
+    guid: 8c106a3419bd37647a79bd98d0b3521f
+  - enabled: 1
+    path: Assets/Scenes/story/story10/story10.unity
+    guid: 137cf06ea2d31c3489cd230ee780848f
+  - enabled: 1
     path: Assets/Scenes/Desert.unity
     guid: 1ad7cf18ee29f4c4387817f76f10c6eb
+  - enabled: 1
+    path: Assets/Scenes/story/story6/story6.unity
+    guid: 5661bb376f3411b43974c2455d5b9105
   - enabled: 1
     path: Assets/Scenes/JungleFight/RabbitBattle.unity
     guid: 7d1b70e10dac1ad4f86f322679545a2e
@@ -60,7 +84,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DesertlandFight/TigerDesertland .unity
     guid: 16b653a057e485c44a4015ac23defd5a
   - enabled: 1
-    path: Assets/Scenes/DesertlandFight/BossDesertland .unity
+    path: Assets/Scenes/DesertlandFight/BossDesertland.unity
     guid: 808e294c862653b4c8fff75a541bc100
   - enabled: 1
     path: Assets/Scenes/GameOver.unity

@@ -9,15 +9,11 @@ public class SceneChange : MonoBehaviour
         {
             if(other.gameObject.name == "StoreDoor") //Change to name of gameObject
             {
-                SceneManager.LoadScene("Home"); //Change to scene want to load
-            }
-            else if(other.gameObject.name == "BedroomDoor") //Change to name of gameObject
-            {
-                SceneManager.LoadScene("Bedroom"); //Change to scene want to load
+                SceneManager.LoadScene("story2"); //Change to scene want to load
             }
             else if(other.gameObject.name == "ExitStore") //Change to name of gameObject
             {
-                SceneManager.LoadScene("LevelSelect"); //Change to scene want to load
+                SceneManager.LoadScene("story3"); //Change to scene want to load
             }
             else if(other.gameObject.name == "Rabbit 1(Clone)") //Change to name of gameObject
             {
@@ -41,7 +37,7 @@ public class SceneChange : MonoBehaviour
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene("BossJungleBattle"); //Change to scene want to load
+                SceneManager.LoadScene("story4"); //Change to scene want to load
             }
             else if(other.gameObject.name == "bdl_byx(Clone)") //Change to name of gameObject
             {
@@ -65,7 +61,7 @@ public class SceneChange : MonoBehaviour
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene("BossIsland"); //Change to scene want to load
+                SceneManager.LoadScene("story8"); //Change to scene want to load
             }
             else if(other.gameObject.name == "PBR_Golem(Clone)") //Change to name of gameObject
             {
@@ -89,7 +85,7 @@ public class SceneChange : MonoBehaviour
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
-                SceneManager.LoadScene("BossDesert"); //Change to scene want to load
+                SceneManager.LoadScene("story6"); //Change to scene want to load
             }
 
         }
