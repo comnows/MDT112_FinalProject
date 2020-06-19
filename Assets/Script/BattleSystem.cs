@@ -174,6 +174,11 @@ public class BattleSystem : MonoBehaviour
                 exp = 300;
                 SceneManager.LoadScene("Desert");
             }
+            if (enemyUnit.unitName == "drought Drake")//ชื่อบอสของด่านทะเลทราย **ยังไมได้เเก้**
+            {
+                exp = 500;
+                SceneManager.LoadScene("story7");
+            }
         }
         else if(state == BattleState.LOST)
         {

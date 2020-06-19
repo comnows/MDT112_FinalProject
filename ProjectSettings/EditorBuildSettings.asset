@@ -81,7 +81,7 @@ EditorBuildSettings:
     path: Assets/Scenes/DesertlandFight/IguanaDesertland.unity
     guid: ab7274fbe5c76294a945c78e64a1053d
   - enabled: 1
-    path: Assets/Scenes/DesertlandFight/TigerDesertland .unity
+    path: Assets/Scenes/DesertlandFight/TigerDesertland.unity
     guid: 16b653a057e485c44a4015ac23defd5a
   - enabled: 1
     path: Assets/Scenes/DesertlandFight/BossDesertland.unity
