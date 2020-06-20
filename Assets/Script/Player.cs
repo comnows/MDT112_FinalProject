@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         maxEXP = data.maxEXP;
         health = data.health;
         atkDmg = data.atkDmg;
-        healAmount = PlayerData.healAmount;
+        healAmount = data.healAmount;
     }
 
     public void gainEXP(int exp)
