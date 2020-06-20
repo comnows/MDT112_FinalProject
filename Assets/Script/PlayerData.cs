@@ -11,6 +11,7 @@ public class PlayerData
     public int maxEXP;
     public int health;
     public int atkDmg;
+    public PlayerData(PlayerData player);
 
     public PlayerData (Player player)
     {
@@ -19,5 +20,6 @@ public class PlayerData
         maxEXP = player.maxEXP;
         health = player.health;
         atkDmg = player.atkDmg;
+        healAmount = PlayerData.healAmount;
     }
 }
