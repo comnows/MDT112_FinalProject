@@ -114,10 +114,6 @@ public class BattleSystem : MonoBehaviour
         {
             dialogueText.text = "You won the battle!!!";
 
-            if(enemyUnit.unitName == "FinalBoss")
-            {
-                SceneManager.LoadScene("GoodEnding"); //change GoodEnding to Name want to fade
-            }
             if(enemyUnit.unitName == "Big rabbit")
             {
                 exp = 15;
@@ -139,46 +135,55 @@ public class BattleSystem : MonoBehaviour
             if(enemyUnit.unitName == "Nature Drake")
             {
                 exp = 150;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("story5");
             }
             if(enemyUnit.unitName == "Frog")
             {
                 exp = 100;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Island");
             }
             if(enemyUnit.unitName == "Crab")
             {
                 exp = 150;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Island");
             }
             if(enemyUnit.unitName == "Huclam")
             {
                 exp = 300;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Island");
             }
             if(enemyUnit.unitName == "Miracle Drake")
             {
-                exp = 1000;
+                exp = 9999999999;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("story9");
             }
             if(enemyUnit.unitName == "Iguana")
             {
                 exp = 40;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Desert");
             }
             if(enemyUnit.unitName == "Tiger")
             {
                 exp = 50;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Desert");
             }
             if(enemyUnit.unitName == "Golem")
             {
                 exp = 75;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("Desert");
             }
             if (enemyUnit.unitName == "drought Drake")
             {
                 exp = 500;
+                player.gainEXP(exp);
                 SceneManager.LoadScene("story7");
             }
         }
