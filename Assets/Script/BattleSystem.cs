@@ -158,7 +158,7 @@ public class BattleSystem : MonoBehaviour
             }
             if(enemyUnit.unitName == "Miracle Drake")
             {
-                exp = 9999999999;
+                exp = 9999;
                 player.gainEXP(exp);
                 SceneManager.LoadScene("story9");
             }
